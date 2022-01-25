@@ -1,0 +1,195 @@
+
+        .row{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 25px;
+        }
+        .row-img{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 25px;
+        }
+         .small-img-group{
+                display: flex;
+                justify-content: space-between;
+            }
+            .small-img-col{
+                flex-basis: 24%;
+                cursor: pointer;
+            }
+            .sproduct select{
+                display: block;
+                padding: 5px 10px;
+            }
+            .sproduct input{
+                width: 50px;
+                height: 40px;
+                padding-left: 10px;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+            .sproduct{
+                padding-top:100px ;
+            }
+        button{
+        font-size: 15px;
+        font-weight: 700;
+        outline: none;
+        border: none;
+        background-color: #9519b4;
+        color: aliceblue;
+        padding: 13px 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    button:hover{
+        background-color: rgb(132, 7, 204);
+    }
+    .buy-btn{
+        background-color: #9519b4;
+        transition:all 0.5s ease;
+    }
+    .buy-btn:hover{
+        background-color: rgb(132, 7, 204);
+    }
+    hr{
+        width: 30px;
+        height: 2px;
+        background-color: rgb(132, 7, 204);
+    }
+    .star{
+        padding: 10px 0;
+    }
+    .star i{
+        font-size:10px;
+        color: goldenrod;
+    }
+    /*---Start Section Newitem*/
+    #newitem .one{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+    }
+    #newitem .one .details{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease;
+    }
+    
+    #newitem .one:hover .details{
+        background-color: rgba(245, 178, 178, 0.7);
+    }
+    #newitem .one .details button{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        color: #1d1d1d;
+        background: none;
+        text-transform: uppercase;
+        border-bottom: 1px solid #1d1d1d;
+        padding: 2.5px 10px; 
+        text-align: center;
+        transform: translateY(100px);
+        transition: all 0.5s ease;
+    }
+    #newitem .one .details button:hover{
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+    #newitem .one:nth-child(1) .details,
+    #newitem .one:nth-child(2) .details,
+    #newitem .one:nth-child(3) .details{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /*---End Section Newitem*/
+    /*---Start featured---*/ 
+    .product{
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+    .product img{
+        transition:all 0.5s ease;
+    }
+    .product img:hover{
+        transform: scale(1.1,1.1);
+    }
+    /*-----End featured---*/
+    /*-----Start Banner---*/
+    #banner{
+        
+            background-image: url(images/pexels-photo-4173108.jpeg);
+            width: 100%;
+            height: 70vh;
+            background-size: cover;
+            background-position:top 10px 10px 10px;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background-attachment: fixed;
+            cursor: pointer;
+        
+        }
+    #banner h4{
+        color: #d8d8d8;
+    }
+    #banner h1{
+        color: #fff;
+    }
+    div h3,
+    div h2, 
+    div h4{
+        font-size: 30px;
+    }
+    div h4{
+        padding: 10px 0;
+    }
+     div select{
+        margin: 10px 0;
+    }
+    div span{
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    .db{
+        text-align: center;
+        margin: 10px 0;
+    }
+    /*-----media Query */
+    @media screen and (max-width: 480px) {
+        .row,
+        .row-img{
+           
+            grid-template-columns: repeat(1,1fr);
+        }
+        .product{
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 769px){
+        .row{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .row-img{
+           
+            grid-template-columns: repeat(1,1fr);
+        }
+        .product{
+            text-align: center;
+        }
+    }

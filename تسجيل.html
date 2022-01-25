@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كتاكيت للصناعات الغذائية - katakit</title>
+ 
+   <!-----FontAwsome CND-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-----Scroll reveal CDN---->
+    <script src="https://unpkg.com/scrollreveal"></script>
+     <!---Custom stylesheet-->
+     <link rel="stylesheet" href="css/style.css">
+     <!---Animation Css-->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!----------owl Carrousel--css------------->
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!---font google-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;500;600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&family=Ephesis&family=Italianno&display=swap" rel="stylesheet">
+</head>
+<style>
+
+    /*-----------x----------------Global classes----------x---------*/
+body{
+	font-family: 'Caveat Brush', cursive;
+	margin: 0;
+	padding: 0;
+	background-image: url(images/Abract01.png);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+  
+	}
+
+ .mydiv{
+	margin: 0;
+	width: 400px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+	box-shadow: -5px -5px 10px black;
+	direction: rtl;
+    height: 568px;
+}
+.male{
+	margin: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 100px;
+	padding: 5px;
+	text-align: center;
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.mydiv p{
+
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+.mydiv input {
+	width: 100%;
+	margin-bottom: 20px;
+	} 
+.mydiv input[type="username"],input[type="password"]{
+	border:none;
+	border-bottom:1px solid #6b6da1;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.mydiv input[type="submit"]{
+	border:none;
+	outline: none;
+	background:#6b6da1;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 16px;
+    padding: 7px;
+
+}
+.mydiv input[type="submit"]:hover{
+	cursor: pointer;
+	background:#4b4c80;
+	color: #eee;
+
+}
+.mydiv input[placeholder="Enter your Name"]{
+	color:#fff;
+}
+.mydiv input[placeholder="Enter your Password"]{
+	color:#fff;}
+.mydiv a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+.mydiv a:hover{
+	color :#fff;
+}
+
+/*----Media Quary----*/
+@media screen and (max-width: 480px) {
+    
+    .mydiv {
+        width: 319px;
+        top: 45%;
+        left: 50%;
+        height: 433px;
+    
+    }
+
+}   
+</style>
+<body>
+
+    <!----------Start--Header--------------->
+<header >
+    <div class="container">
+        <nav class="nav">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <a href="home.html" class="logo"><img src="images/Katakit-logo.png" width="500px" height="70%"  alt=""></a>
+          <ul class="nav-list">
+              <li class="nav-item">
+                  <a href="home.html" class="nav-link active">الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a href="الشركة.html" class="nav-link">حول الشركة</a>
+            </li>
+            <li class="nav-item">
+                <a class="prod nav-link " href="#منتجات">منتجات </a>
+            </li>
+            <li class="nav-item">
+                <a href="جديدنا.html" class="nav-link">جديدنا</a>
+            </li>
+            <li class="nav-item">
+                <a href="الأسئلة-الشائعة.html" class="nav-link">اعلانات</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact  " class="cont nav-link">تواصل معنا</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+</header>
+<!----------End--Header--------------->
+<div class="mydiv">
+    <!-- <img src="imges/Male-Avatar.jpg" class="male"> -->
+    <h1>إنشاء حساب</h1>
+    <form>
+        <p>الاسم الكامل</p>
+        <input type="username" name="" placeholder="الاسم الكامل">
+        <p>البريد الألكتروني</p>
+        <input type="username" name="" placeholder="البريد الألكتروني">
+        <p>كلمة المرور</p>
+        <input type="password" name="" placeholder="كلمة المرور">
+        <p> تاكيد كلمة المرور</p>
+        <input type="password" name="" placeholder="كلمة المرور">
+        <input type="submit" name="" value="اشتراك"><br>
+        <a href="#">نسيت كلمة المرور؟</a><br>
+        <a href="signup.html">تسجيل الدخول </a>
+    </form>
+</div>
+
+   
+
+<script src="js/jquary v3.5.1.main.js"></script>
+  <!----------owl Carrousel-js------------->
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/main-2.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+
+
+</body>
+</html>
+
+        
+	
+
+	  

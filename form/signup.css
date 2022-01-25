@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*---------------------------Global classes-------------------*/
+a{
+    text-decoration: none;
+    color:#fff;
+}
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #3f4954;
+}
+
+ul{
+    list-style-type: none;
+}
+
+:root{
+    /* theme color*/
+    --text-gray:#3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midinight:#551030;
+
+    /* gradient color*/
+    --sky: linear-gradient(120deg, #341f3a 0%, #fbc2f3 100%);
+
+    /* theme font family*/
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --josefin:'josefin',cursive;
+    --livvic:'livvic',cursive;
+    --lexend:'lexend',cursive
+}
+
+h1{
+    font-family: var(--josefin);
+    font-size: 3.7rem;
+}
+
+h2{
+    font-family: var(--lexend);
+}
+
+h3{
+    font-family: var(--livvic);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    font-family: var(--livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+.hidden{
+    display: none;
+}
+
+.overlay{
+    background: rgba(35, 35, 36, 0.5);
+    width: 100%;
+    height: 100%;
+}
+/*-----------x----------------Global classes----------x---------*/
+body{
+	font-family: 'Caveat Brush', cursive;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/Abract01.png);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	}
+
+	.nav{
+    
+		/* padding: 0 2rem; */
+		overflow: hidden;
+		position: fixed;
+		width: 100%;
+		z-index: 10;
+		
+	}
+	.nav .nav-brand img{
+		width: 26%;
+		
+	}
+	.nav .nav-menu{
+		justify-content: space-between;
+		
+	
+	}
+	.nav .toggle-collapse{
+		position: absolute;
+		top: 0;
+		width: 90%;
+		cursor: pointer;
+		display: none;
+	}
+	.nav .toggle-collapse .toggle-icons{
+		display: flex;
+		justify-content: flex-end;
+		padding: 1.7rem 0;
+	}
+	
+	.collapse{
+		height: 30rem;
+	}
+	
+	
+	.nav .toggle-collapse .toggle-icons i{
+		font-size: 1.4rem;
+		color: var(--text-gray);
+	}
+	.nav .nav-items{
+		
+		display: flex;
+		margin: 0%;
+		direction: rtl;
+	}
+	
+	.nav .nav-items .nav-link{
+	
+		padding: 1.6rem 1rem;
+		font-size: 1.1rem;
+		position: relative;
+		font-family: var(--Abel);
+		font-size: 1.1rem;
+	}
+	
+	
+	.nav .nav-items .nav-link:hover a{
+		color: #fbc2f3;
+	}
+	
+	
+	.nav .nav-brand a{
+		font-size: 1.6rem;
+		padding: 1rem 0;
+		display: block;
+		font-family: var(--Abel);
+		font-size: 1.6rem;
+		
+		
+	}
+	.nav .social{
+		padding: 1.4rem 0;
+	}
+	
+	.nav .social i{
+		padding: 0 .2rem;
+	}
+	.nav .social i:hover{
+		color: #fbc2f3;
+	
+	}
+	/*-----------x--------navbar----------x-------*/
+.mydiv{
+	margin: 0;
+	width: 320px;
+	
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+	box-shadow: -5px -5px 10px black;
+	direction: rtl;
+}
+.male{
+	margin: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: 100px;
+	padding: 5px;
+	text-align: center;
+}
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.mydiv p{
+
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+.mydiv input {
+	width: 100%;
+	margin-bottom: 20px;
+	} 
+.mydiv input[type="username"],input[type="password"]{
+	border:none;
+	border-bottom:1px solid #6b6da1;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.mydiv input[type="submit"]{
+	border:none;
+	outline: none;
+	background:#6b6da1;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 16px;
+    padding: 7px;
+
+}
+.mydiv input[type="submit"]:hover{
+	cursor: pointer;
+	background:#4b4c80;
+	color: #eee;
+
+}
+.mydiv input[placeholder="Enter your Name"]{
+	color:#fff;
+}
+.mydiv input[placeholder="Enter your Password"]{
+	color:#fff;}
+.mydiv a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+}
+.mydiv a:hover{
+	color :#fff;
+}
+/* linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7))*/

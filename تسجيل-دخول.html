@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+	<!-- <link rel="stylesheet" type="text/css" href="css/signup.css" > -->
+	 <!---------fontAwesome-------->
+	 <link rel="stylesheet" href="../css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
+	<title>تسجيل الدخول</title>
+    <style>
+    /*-----------x----------------Global classes----------x---------*/
+    body{
+        font-family: 'Caveat Brush', cursive;
+        margin: 0;
+        padding: 0;
+        background-image: url(images/Abract01.png);
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+      
+        }
+    
+     .mydiv{
+        margin: 0;
+        width: 400px;
+        background-color: rgba(0,0,0,0.5);
+        color: #fff;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-sizing: border-box;
+        padding: 30px 30px;
+        box-shadow: -5px -5px 10px black;
+        direction: rtl;
+        height: 568px;
+    }
+    .male{
+        margin: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
+        left: 100px;
+        padding: 5px;
+        text-align: center;
+    }
+    h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .mydiv p{
+    
+        margin: 0px;
+        padding: 0px;
+        font-weight: bold;
+    }
+    .mydiv input {
+        width: 100%;
+        margin-bottom: 20px;
+        } 
+    .mydiv input[type="username"],input[type="password"]{
+        border:none;
+        border-bottom:1px solid #6b6da1;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .mydiv input[type="submit"]{
+        border:none;
+        outline: none;
+        background:#6b6da1;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 16px;
+        padding: 7px;
+    
+    }
+    .mydiv input[type="submit"]:hover{
+        cursor: pointer;
+        background:#4b4c80;
+        color: #eee;
+    
+    }
+    .mydiv input[placeholder="Enter your Name"]{
+        color:#fff;
+    }
+    .mydiv input[placeholder="Enter your Password"]{
+        color:#fff;}
+    .mydiv a{
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 20px;
+        color: darkgrey;
+    }
+    .mydiv a:hover{
+        color :#fff;
+    }
+    
+    /*----Media Quary----*/
+    @media screen and (max-width: 480px) {
+        
+        .mydiv {
+            width: 319px;
+            top: 45%;
+            left: 50%;
+            height: 433px;
+        
+        }
+    
+    }   
+    </style>
+</head>
+
+
+
+    <body>
+        <!-------------------------------Navigation-------------------------->
+        
+        <nav class="nav">
+          <div class="container">
+            <div class="nav-menu flex-row">
+                <div class="nav-brand">
+                    <img src="images/Katakit-logo.png" alt="katakit-log">
+                </div>
+                <div class="toggle-collapse">
+                    <div class="toggle-icons">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div>
+                    <ul class="nav-items">
+                        <li class="nav-link"><a href="index2.html">الرئيسية</a></li>
+                        <li class="nav-link"><a href="الشركة.html">حول الشركة</a></li>
+                        <li class="nav-link"><a href="منتجات.html">منتجات</a></li>
+                        <li class="nav-link"><a href="#">جديدنا</a></li>
+                        <li class="nav-link"><a href="#">اعلانات</a></li>
+                        <li class="nav-link"><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="social text-gray">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        </nav>
+
+
+        <!-------------------------------Navigation-------------------------->
+	<div class="mydiv">
+		<h1>تسجيل الدخول</h1>
+		<form>
+			<p>البريد الألكتروني</p>
+			<input type="username" name="" placeholder="البريد الألكتروني">
+			<p>كلمة المرور</p>
+			<input type="password" name="" placeholder="كلمة المرور">
+			<input type="submit" name="" value="تسجيل الدخول">
+			<a href="#">نسيت كلمة المرور؟</a><br>
+			<a href="تسجيل.html">أنشاء حساب جديد </a>
+		</form>
+	</div>
+     <!--Custom javascript-->
+     <script src="js/main-2.js"></script>
+     <!-- <script src="js//main.js"></script> -->
+    
+	      <!--jquary libray file-->
+		  <script src="js/jquary v3.5.1.main.js"></script>
+		 
+	  </body>
+  </html>
